@@ -1,0 +1,18 @@
+[package]
+name = "leetcode"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "two_sum"
+path = "src/two_sum.rs"
+
+[[bin]]
+name = "add_two_numbers"
+path = "src/add_two_numbers.rs"
+
+[[bin]]
+name = "longest_substr_norpt"
+path = "src/longest_substr_norpt.rs"
+
+[dependencies]
