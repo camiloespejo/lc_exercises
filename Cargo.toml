@@ -15,4 +15,8 @@ path = "src/add_two_numbers.rs"
 name = "longest_substr_norpt"
 path = "src/longest_substr_norpt.rs"
 
+[[bin]]
+name = "median_of_two_sorted_arrays"
+path = "src/median_of_two_sorted_arrays.rs"
+
 [dependencies]
