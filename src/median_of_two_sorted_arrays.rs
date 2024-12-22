@@ -15,7 +15,7 @@ fn find_median_sorted_arrays(nums1: Vec<i32>, nums2: Vec<i32>) -> f64 {
 
     let starting_length = largest_vec.len();
 
-    let mut latest_inserted ;
+    let mut latest_inserted;
 
     let mut pending_push: Option<i32> = None;
 
@@ -41,8 +41,9 @@ fn find_median_sorted_arrays(nums1: Vec<i32>, nums2: Vec<i32>) -> f64 {
         }
     }
 
-    if (largest_vec.last().is_some() && smallest_vec.last().is_some()) 
-    && (largest_vec.last().unwrap() < smallest_vec.last().unwrap()) {
+    if (largest_vec.last().is_some() && smallest_vec.last().is_some())
+        && (largest_vec.last().unwrap() < smallest_vec.last().unwrap())
+    {
         largest_vec.push(*smallest_vec.last().unwrap());
     }
 
@@ -54,16 +55,16 @@ fn find_median_sorted_arrays(nums1: Vec<i32>, nums2: Vec<i32>) -> f64 {
 
     let half: i32 = largest_vec.len() as i32 / 2;
     if largest_vec.len() % 2 != 0 {
-        return largest_vec[half as usize] as f64;
+        largest_vec[half as usize] as f64
     } else {
         let m_pos = largest_vec.len() / 2;
-        return (largest_vec[m_pos] + largest_vec[m_pos - 1]) as f64 / 2.0;
-    }   
+        (largest_vec[m_pos] + largest_vec[m_pos - 1]) as f64 / 2.0
+    }
 }
 
 fn main() {
-    let nums1 = vec![2,2,4,4];
-    let nums2 = vec![2,2,2,4,4];
+    let nums1 = vec![2, 2, 4, 4];
+    let nums2 = vec![2, 2, 2, 4, 4];
 
     let median = find_median_sorted_arrays(nums1, nums2);
 
