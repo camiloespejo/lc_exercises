@@ -19,4 +19,12 @@ path = "src/longest_substr_norpt.rs"
 name = "median_of_two_sorted_arrays"
 path = "src/median_of_two_sorted_arrays.rs"
 
+[[bin]]
+name = "longest_palindromic_substring"
+path = "src/longest_palindromic_substring.rs"
+
+[[bin]]
+name = "zigzag_conversion"
+path = "src/zigzag_conversion.rs"
+
 [dependencies]
