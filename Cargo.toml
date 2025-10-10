@@ -27,4 +27,8 @@ path = "src/longest_palindromic_substring.rs"
 name = "zigzag_conversion"
 path = "src/zigzag_conversion.rs"
 
+[[bin]]
+name = "number_palindrome"
+path = "src/number_palindrome.rs"
+
 [dependencies]
