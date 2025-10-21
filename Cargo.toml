@@ -31,4 +31,16 @@ path = "src/zigzag_conversion.rs"
 name = "number_palindrome"
 path = "src/number_palindrome.rs"
 
+[[bin]]
+name = "reverse_integer"
+path = "src/reverse_integer.rs"
+
+[[bin]]
+name = "divide_two_integers"
+path = "src/divide_two_integers.rs"
+
+[[bin]]
+name = "two_sum_ii"
+path = "src/two_sum_ii.rs"
+
 [dependencies]
